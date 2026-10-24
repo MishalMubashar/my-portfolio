@@ -3,328 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mishal Mubashar — Software Engineer featuring C++, C#, Java, Python, web development, databases, and Mindora AI.">
-  <title>Mishal Mubashar | 3D Developer Portfolio</title>
-  <!-- Bootstrap 5 official CDN -->
+  <meta name="theme-color" content="#100d1c">
+  <meta name="description" content="Mishal Mubashar — Software Engineering student building software, AI experiments, desktop tools, and interactive web experiences.">
+  <title>Mishal Mubashar — Software Engineer in Progress</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+  <div class="noise" aria-hidden="true"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav">
     <div class="container">
-      <a class="navbar-brand fw-bold brand" href="#home">M<span>.</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <a class="navbar-brand brand" href="#home" aria-label="Mishal Mubashar home">M<span>/</span>M</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="btn btn-pink ms-lg-2" href="#contact">Contact Me</a></li>
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Toolkit</a></li>
+          <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+          <li class="nav-item"><a class="nav-link nav-github" href="https://github.com/MishalMubashar" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <main>
-    <!-- Hero -->
-    <section id="home" class="hero-section">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-7 text-center text-lg-start">
-            <span class="badge rounded-pill badge-soft mb-3">SOFTWARE DEVELOPMENT · PORTFOLIO</span>
-            <p class="eyebrow mb-2">Hello, I'm</p>
-            <h1 class="display-3 fw-bold">Mishal <span class="pink-text">Mubashar</span></h1>
-            <h2 class="h4 text-secondary mt-3">Software Engineer Student · Aspiring Full-Stack Developer</h2>
-            <p class="lead hero-copy mt-3">From C++, C#, Java, and Python to web development and databases, I build projects that turn classroom concepts into practical software. Explore my work, experiments, and progress.</p>
-            <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mt-4">
-              <a class="btn btn-pink btn-lg" href="#projects">View My Projects <span aria-hidden="true">↗</span></a>
-              <a class="btn btn-outline-dark btn-lg" href="#about">More About Me</a>
+    <section id="home" class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="orb orb-one" aria-hidden="true"></div><div class="orb orb-two" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7">
+            <div class="availability"><span class="pulse-dot"></span> SOFTWARE ENGINEERING · BUILDING IN PUBLIC</div>
+            <p class="hero-kicker">Curiosity, turned into code.</p>
+            <h1>Hi, I'm<br><span class="gradient-text">Mishal Mubashar.</span></h1>
+            <p class="hero-lede">I’m a Software Engineering student exploring the space where practical software, thoughtful design, and emerging technology meet.</p>
+            <div class="typed-line"><span class="typed-prefix">Currently exploring</span> <span id="typedText">Python & computer vision</span><span class="caret">|</span></div>
+            <div class="hero-actions">
+              <a class="btn btn-glow" href="#work">Explore my work <span>↘</span></a>
+              <a class="btn btn-ghost" href="https://github.com/MishalMubashar" target="_blank" rel="noopener noreferrer">Visit my GitHub ↗</a>
             </div>
-            <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 mt-4">
-              <span class="badge text-bg-light border">C++</span>
-              <span class="badge text-bg-light border">C#</span>
-              <span class="badge text-bg-light border">Java</span>
-              <span class="badge text-bg-light border">Python</span>
-              <span class="badge text-bg-light border">HTML · CSS</span>
-              <span class="badge text-bg-light border">Databases</span>
-            </div>
+            <div class="hero-stack"><span>C++</span><span>C#</span><span>Java</span><span>Python</span><span>Web</span><span>Databases</span></div>
           </div>
-          <div class="col-lg-5 text-center">
-            <div class="avatar-wrap mx-auto" role="img" aria-label="Pink initials avatar for Mishal Mubashar">
-              <div class="avatar-circle">MM</div>
-              <span class="floating-note note-one">✦ Creative</span>
-              <span class="floating-note note-two">⌘ Coding</span>
-            </div>
-            <p class="small text-secondary mt-3 mb-0">Designing with curiosity. Developing with purpose.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section-padding">
-      <div class="container">
-        <div class="section-heading text-center mb-5">
-          <span class="section-kicker">GET TO KNOW ME</span>
-          <h2 class="fw-bold mt-2">About <span class="pink-text">Me</span></h2>
-          <p class="text-secondary">A little about my journey and what motivates me.</p>
-        </div>
-        <div class="row align-items-center g-4">
-          <div class="col-md-5">
-            <div class="about-art shadow-sm">
-              <div class="about-art-inner">
-                <span class="art-star">✦</span>
-                <span class="art-monogram">M.</span>
-                <span class="art-caption">LEARN · BUILD · GROW</span>
+          <div class="col-lg-5">
+            <div class="scene tv-scene" aria-label="Animated pastel television with playful cartoon characters">
+              <div class="tv-spark spark-one">✦</div>
+              <div class="tv-spark spark-two">✧</div>
+              <div class="tv-spark spark-three">♡</div>
+              <div class="tv-shadow"></div>
+              <div class="retro-tv">
+                <div class="tv-antenna antenna-left"></div><div class="tv-antenna antenna-right"></div>
+                <div class="tv-shell">
+                  <div class="tv-screen">
+                    <div class="screen-sun"></div>
+                    <div class="cartoon-hill hill-back"></div><div class="cartoon-hill hill-front"></div>
+                    <div class="cartoon-character character-cat">
+                      <span class="cat-ear ear-left"></span><span class="cat-ear ear-right"></span>
+                      <span class="cat-eye eye-left"></span><span class="cat-eye eye-right"></span>
+                      <span class="cat-cheek cheek-left"></span><span class="cat-cheek cheek-right"></span>
+                      <span class="cat-smile"></span>
+                    </div>
+                    <div class="cartoon-character character-blob">
+                      <span class="blob-eye eye-left"></span><span class="blob-eye eye-right"></span><span class="blob-mouth"></span>
+                    </div>
+                    <span class="screen-star star-a">✦</span><span class="screen-star star-b">✧</span>
+                  </div>
+                  <div class="tv-controls"><span class="tv-knob"></span><span class="tv-knob small-knob"></span><span class="tv-speaker"></span></div>
+                  <div class="tv-label">MISHAL TV <span>ON AIR</span></div>
+                </div>
+                <div class="tv-foot foot-left"></div><div class="tv-foot foot-right"></div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-7">
-            <h3 class="h4 fw-bold">Building my future in technology</h3>
-            <p class="text-secondary">I’m Mishal Mubashar, a software development student with an ICS (Physics) background. My learning journey spans programming fundamentals, object-oriented development, database-backed applications, and responsive web design.</p>
-            <p class="text-secondary">I enjoy solving problems and experimenting across languages and technologies. Through projects such as a Python image-editing app, a Java question-and-prediction program, a C# and MySQL appointment system, and Mindora AI, I’m steadily building the skills to create useful, polished software.</p>
-            <div class="row g-3 mt-2">
-              <div class="col-sm-6"><div class="mini-info"><span class="pink-text">01.</span><strong>Creative thinking</strong><small>Turning ideas into designs</small></div></div>
-              <div class="col-sm-6"><div class="mini-info"><span class="pink-text">02.</span><strong>Continuous learning</strong><small>Improving with every project</small></div></div>
+              <div class="floating-cartoon floating-star">✦</div>
+              <div class="floating-cartoon floating-heart">♡</div>
+              <div class="scene-caption"><span class="caption-line"></span><span>A LITTLE MAGIC, A LOT OF CODE</span></div>
             </div>
           </div>
         </div>
+        <a href="#work" class="scroll-cue"><span class="scroll-wheel"></span> SCROLL TO EXPLORE</a>
       </div>
     </section>
 
-    <!-- Education -->
-    <section id="education" class="section-padding section-tint">
+    <section class="intro-strip">
       <div class="container">
-        <div class="section-heading text-center mb-5">
-          <span class="section-kicker">MY BACKGROUND</span>
-          <h2 class="fw-bold mt-2">Education</h2>
-          <p class="text-secondary">The foundation of my technology journey.</p>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-              <h3 class="h6 fw-bold">
-      Intermediate in Computer Science (ICS — Physics)
-    </h3>
-    <p class="text-secondary mb-0">
-      Foundation in computing, mathematics, and problem-solving.
-    </p>
-          
-<div class="education-card card border-0 shadow-sm">
-  <div class="card-body p-4 p-md-5">
-
-    <h3 class="h5 fw-bold mb-2">
-      Bachelor's Degree in Software Engineering
-    </h3>
-
-    <p class="text-secondary mb-4">
-      University: University of Lahore
-    </p>
-
-    <div class="row g-3">
-      <div class="col-sm-6">
-        <div class="mini-info">
-          <span class="pink-text">CGPA</span>
-          <strong>4.00 / 4.00</strong>
-          <small>Academic result</small>
-        </div>
-      </div>
-
-      <div class="col-sm-6">
-        <div class="mini-info">
-          <span class="pink-text">MARKS</span>
-          <strong>92%</strong>
-          <small>Academic result</small>
-        </div>
-      </div>
-    </div>
-
-    <hr class="my-4">
-  </div>
-</div>
-
-                <hr class="my-4">
-                <p class="small text-secondary mb-0"><strong>Next goal:</strong> Continue developing skills in software development, programming, and modern web technologies.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="intro-inner"><span class="intro-index">01 / THE APPROACH</span><p>I learn by <em>making things</em> — from foundational programming assignments to apps that connect interfaces, logic, data, and real-world use.</p><span class="intro-spark">✳</span></div>
       </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section-padding">
+    <section id="work" class="section-space work-section">
       <div class="container">
-        <div class="section-heading text-center mb-5">
-          <span class="section-kicker">WHAT I'M LEARNING</span>
-          <h2 class="fw-bold mt-2">My <span class="pink-text">Skills</span></h2>
-          <p class="text-secondary">A growing toolkit for creating on the web.</p>
-        </div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-4"><div class="skill-card card h-100 border-0 shadow-sm"><div class="card-body p-4"><div class="skill-symbol">C++</div><h3 class="h5 fw-bold">C++</h3><p class="text-secondary small">Programming fundamentals, logic, and problem-solving practice.</p><div class="skill-tags"><span>OOP foundations</span><span>Problem solving</span></div></div></div></div>
-          <div class="col-sm-6 col-lg-4"><div class="skill-card card h-100 border-0 shadow-sm"><div class="card-body p-4"><div class="skill-symbol">C#</div><h3 class="h5 fw-bold">C#</h3><p class="text-secondary small">Application logic and object-oriented programming practice.</p><div class="skill-tags"><span>OOP</span><span>Application logic</span></div></div></div></div>
-          <div class="col-sm-6 col-lg-4"><div class="skill-card card h-100 border-0 shadow-sm"><div class="card-body p-4"><div class="skill-symbol">J</div><h3 class="h5 fw-bold">Java</h3><p class="text-secondary small">Building logic-based programs and structured applications.</p><div class="skill-tags"><span>Core Java</span><span>Conditionals & logic</span></div></div></div></div>
-          <div class="col-sm-6 col-lg-4"><div class="skill-card card h-100 border-0 shadow-sm"><div class="card-body p-4"><div class="skill-symbol">Py</div><h3 class="h5 fw-bold">Python</h3><p class="text-secondary small">Scripting and practical application experiments, including image editing.</p><div class="skill-tags"><span>Scripting</span><span>Image tools</span></div></div></div></div>
-          <div class="col-sm-6 col-lg-4"><div class="skill-card card h-100 border-0 shadow-sm"><div class="card-body p-4"><div class="skill-symbol">&lt;/&gt;</div><h3 class="h5 fw-bold">HTML5 &amp; CSS3</h3><p class="text-secondary small">Semantic pages, responsive layouts, and custom visual styling.</p><div class="skill-tags"><span>Responsive design</span><span>Flexbox</span></div></div></div></div>
-          <div class="col-sm-6 col-lg-4"><div class="skill-card card h-100 border-0 shadow-sm"><div class="card-body p-4"><div class="skill-symbol">DB</div><h3 class="h5 fw-bold">Databases &amp; Tools</h3><p class="text-secondary small">MySQL concepts, Git/GitHub workflow, Bootstrap, and API integration practice.</p><div class="skill-tags"><span>MySQL</span><span>Git &amp; GitHub</span><span>Bootstrap</span></div></div></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section-padding section-tint">
-      <div class="container">
-        <div class="section-heading text-center mb-5">
-          <span class="section-kicker">SELECTED WORK</span>
-          <h2 class="fw-bold mt-2">My <span class="pink-text">Projects</span></h2>
-          <p class="text-secondary">Practice projects that show what I'm learning.</p>
+        <div class="section-top"><div><span class="eyebrow">SELECTED BUILDS / EXPERIMENTS</span><h2>Less talking.<br><span class="gradient-text">More making.</span></h2></div><p class="section-intro">A growing collection of coursework, prototypes, and personal experiments across different parts of software development.</p></div>
+        <div class="filter-row" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All work <span>08</span></button>
+          <button class="filter-btn" data-filter="ai">AI & Vision</button>
+          <button class="filter-btn" data-filter="apps">Applications</button>
+          <button class="filter-btn" data-filter="web">Web & Profile</button>
         </div>
         <div class="row g-4 project-grid">
-          <div class="col-md-6 col-lg-4">
-            <article class="card project-card h-100 border-0 shadow-sm tilt-card">
-              <div class="project-visual visual-ai"><span class="project-number">01 / AI</span><span class="visual-icon">✧</span><span>MIN DORA AI</span></div>
-              <div class="card-body p-4 d-flex flex-column">
-                <div class="mb-2"><span class="badge badge-soft">JavaScript</span> <span class="badge badge-soft">Node.js</span> <span class="badge badge-soft">Gemini API</span></div>
-                <h3 class="h5 fw-bold">Mindora AI — AI Chat Web App</h3>
-                <p class="text-secondary">A ChatGPT-style assistant project with a custom chat interface, Express backend, API integration, and ongoing work on reliability and file/image features.</p>
-                <div class="project-meta mt-auto"><span>Web application</span><span>In progress</span></div>
-              </div>
-            </article>
+          <div class="col-md-6 col-xl-4 project-item" data-category="ai">
+            <article class="project-card tilt-card h-100"><div class="project-art art-mindora"><span class="art-index">01 / AI</span><div class="ai-orb"><i></i><i></i><i></i></div><span class="art-label">MINDORA</span></div><div class="project-content"><div class="tags"><span>Node.js</span><span>Express</span><span>Gemini API</span></div><h3>Mindora AI</h3><p>A conversational AI web-app concept with a custom chat experience and server-side API integration. A continuing build as features and reliability evolve.</p><div class="project-foot"><span>AI / Web application</span><span class="status status-progress">In progress</span></div></div></article>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <article class="card project-card h-100 border-0 shadow-sm tilt-card">
-              <div class="project-visual visual-python"><span class="project-number">02 / PY</span><span class="visual-icon">▧</span><span>SNAP SYNTHESIS</span></div>
-              <div class="card-body p-4 d-flex flex-column">
-                <div class="mb-2"><span class="badge badge-soft">Python</span> <span class="badge badge-soft">Image editing</span></div>
-                <h3 class="h5 fw-bold">Snap Synthesis</h3>
-                <p class="text-secondary">A Python image-editing application project focused on experimenting with image manipulation and creative visual output.</p>
-                <div class="project-meta mt-auto"><span>Desktop / utility concept</span><span>Course project</span></div>
-              </div>
-            </article>
+          <div class="col-md-6 col-xl-4 project-item" data-category="ai">
+            <article class="project-card tilt-card h-100"><div class="project-art art-sign"><span class="art-index">02 / COMPUTER VISION</span><div class="vision-window"><div class="vision-hand">✋</div><span class="scan scan-one"></span><span class="scan scan-two"></span><small>HAND LANDMARKS · LIVE</small></div><span class="art-label">SIGN LANGUAGE</span></div><div class="project-content"><div class="tags"><span>Python</span><span>OpenCV</span><span>MediaPipe</span></div><h3>Real-Time Sign Language Recognition</h3><p>A computer-vision project exploring hand landmarks and real-time recognition for alphabet signs using a webcam-based workflow.</p><div class="project-foot"><span>Computer vision</span><span class="status">Learning project</span></div></div></article>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <article class="card project-card h-100 border-0 shadow-sm tilt-card">
-              <div class="project-visual visual-java"><span class="project-number">03 / JAVA</span><span class="visual-icon">?</span><span>QUESTION &amp; PREDICTION</span></div>
-              <div class="card-body p-4 d-flex flex-column">
-                <div class="mb-2"><span class="badge badge-soft">Java</span> <span class="badge badge-soft">Logic</span></div>
-                <h3 class="h5 fw-bold">Question &amp; Prediction App</h3>
-                <p class="text-secondary">A Java programming-logic project built around questions, user responses, and prediction-style outcomes.</p>
-                <div class="project-meta mt-auto"><span>Logic-based app</span><span>Course project</span></div>
-              </div>
-            </article>
+          <div class="col-md-6 col-xl-4 project-item" data-category="ai">
+            <article class="project-card tilt-card h-100"><div class="project-art art-invisibility"><span class="art-index">03 / VISION</span><div class="cloak-shape"><div class="cloak-person"></div><div class="cloak-ring"></div></div><span class="art-label">INVISIBILITY</span></div><div class="project-content"><div class="tags"><span>Python</span><span>OpenCV</span><span>MediaPipe</span></div><h3>Invisibility Computer Vision</h3><p>A real-time visual-effects experiment using camera frames and segmentation techniques to create an invisibility-style effect.</p><div class="project-foot"><span>Computer vision</span><span class="status">Learning project</span></div></div></article>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <article class="card project-card h-100 border-0 shadow-sm tilt-card">
-              <div class="project-visual visual-database"><span class="project-number">04 / C# + DB</span><span class="visual-icon">⌘</span><span>APPOINTMENT SYSTEM</span></div>
-              <div class="card-body p-4 d-flex flex-column">
-                <div class="mb-2"><span class="badge badge-soft">C#</span> <span class="badge badge-soft">MySQL</span></div>
-                <h3 class="h5 fw-bold">Lawyer Appointment System</h3>
-                <p class="text-secondary">A database-backed system concept for organising lawyer appointments and case-related information using C# and MySQL.</p>
-                <div class="project-meta mt-auto"><span>Database application</span><span>Course project</span></div>
-              </div>
-            </article>
+          <div class="col-md-6 col-xl-4 project-item" data-category="apps">
+            <article class="project-card tilt-card h-100"><div class="project-art art-snap"><span class="art-index">04 / PYTHON</span><div class="snap-stack"><div class="snap-shape shape-a"></div><div class="snap-shape shape-b"></div><div class="snap-shape shape-c"></div></div><span class="art-label">SNAP SYNTHESIS</span></div><div class="project-content"><div class="tags"><span>Python</span><span>Image editing</span></div><h3>Snap Synthesis</h3><p>An image-editing application concept focused on experimenting with image manipulation and creative visual output.</p><div class="project-foot"><span>Desktop / utility</span><span class="status">Project concept</span></div></div></article>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <article class="card project-card h-100 border-0 shadow-sm tilt-card">
-              <div class="project-visual visual-web"><span class="project-number">05 / WEB</span><span class="visual-icon">&lt;/&gt;</span><span>PERSONAL PORTFOLIO</span></div>
-              <div class="card-body p-4 d-flex flex-column">
-                <div class="mb-2"><span class="badge badge-soft">HTML5</span> <span class="badge badge-soft">CSS3</span> <span class="badge badge-soft">Bootstrap</span></div>
-                <h3 class="h5 fw-bold">Responsive Portfolio Website</h3>
-                <p class="text-secondary">A personal site presenting education, skills, projects, and contact details, with responsive navigation and custom 3D-inspired styling.</p>
-                <div class="project-meta mt-auto"><span>Frontend</span><span>Assignment / portfolio</span></div>
-              </div>
-            </article>
+          <div class="col-md-6 col-xl-4 project-item" data-category="apps">
+            <article class="project-card tilt-card h-100"><div class="project-art art-java"><span class="art-index">05 / JAVA</span><div class="question-cube"><span>?</span></div><div class="answer-pill">PREDICT <b>→</b></div><span class="art-label">QUESTION & PREDICTION</span></div><div class="project-content"><div class="tags"><span>Java</span><span>Programming logic</span></div><h3>Question & Prediction App</h3><p>A logic-oriented Java project exploring questions, user responses, and prediction-style outcomes.</p><div class="project-foot"><span>Programming fundamentals</span><span class="status">Course project</span></div></div></article>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <article class="card project-card h-100 border-0 shadow-sm tilt-card">
-              <div class="project-visual visual-github"><span class="project-number">06 / GIT</span><span class="visual-icon">⑂</span><span>PROFILE README</span></div>
-              <div class="card-body p-4 d-flex flex-column">
-                <div class="mb-2"><span class="badge badge-soft">Markdown</span> <span class="badge badge-soft">GitHub</span></div>
-                <h3 class="h5 fw-bold">GitHub Profile README</h3>
-                <p class="text-secondary">A personalised GitHub profile design planned with a pink visual identity, animated typing text, technology badges, stats, and contribution visuals.</p>
-                <div class="project-meta mt-auto"><span>Developer profile</span><span>Profile project</span></div>
-              </div>
-            </article>
+          <div class="col-md-6 col-xl-4 project-item" data-category="apps">
+            <article class="project-card tilt-card h-100"><div class="project-art art-law"><span class="art-index">06 / C# + DATABASE</span><div class="law-building"><span></span><span></span><span></span><b>§</b></div><span class="art-label">LEGAL WORKFLOW</span></div><div class="project-content"><div class="tags"><span>C#</span><span>MySQL</span><span>ASP.NET MVC</span></div><h3>Lawyer Appointment & Case Management</h3><p>A database-backed system for client/lawyer accounts, appointment handling, and case-related information, built as a software project.</p><div class="project-foot"><span>Full-stack / database</span><span class="status">Course project</span></div></div></article>
+          </div>
+          <div class="col-md-6 col-xl-4 project-item" data-category="web">
+            <article class="project-card tilt-card h-100"><div class="project-art art-codequest"><span class="art-index">07 / PHP + MYSQL</span><div class="code-window"><div class="window-dots"><i></i><i></i><i></i></div><code><span>&lt;learn&gt;</span><br>&nbsp;buildSkills();<br><span>&lt;/learn&gt;</span></code></div><span class="art-label">CODEQUEST</span></div><div class="project-content"><div class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div><h3>CodeQuest — Game-Based Learning</h3><p>A coding education platform concept designed to combine lessons, playable progression, XP, unlocks, and saved learner progress.</p><div class="project-foot"><span>Learning platform</span><span class="status status-progress">In development</span></div></div></article>
+          </div>
+          <div class="col-md-6 col-xl-4 project-item" data-category="web">
+            <article class="project-card tilt-card h-100"><div class="project-art art-portfolio"><span class="art-index">08 / WEB + GITHUB</span><div class="portfolio-cube"><span>M</span><i></i></div><span class="art-label">DIGITAL PRESENCE</span></div><div class="project-content"><div class="tags"><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>Markdown</span></div><h3>Portfolio & GitHub Profile</h3><p>A personal developer presence with a responsive portfolio, visual identity, technology badges, animated profile elements, and project presentation.</p><div class="project-foot"><span>Web design / documentation</span><span class="status">Ongoing</span></div></div></article>
           </div>
         </div>
-        <div class="alert alert-light border mt-4 small" role="alert"><strong>Portfolio accuracy:</strong> These are the projects I could identify from our previous discussions. Update each description to match the final features you actually implemented, and add repository/demo links when you publish them.</div>
+        <p class="work-note"><span>↗</span> </p>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section-padding">
+    <section id="skills" class="section-space skills-section">
       <div class="container">
-        <div class="section-heading text-center mb-5">
-          <span class="section-kicker">LET'S CONNECT</span>
-          <h2 class="fw-bold mt-2">Contact <span class="pink-text">Me</span></h2>
-          <p class="text-secondary">Have a question or idea? Send me a message.</p>
-        </div>
-        <div class="row g-5">
-          <div class="col-lg-5">
-            <h3 class="h4 fw-bold">Get in touch</h3>
-            <p class="text-secondary">I'm interested in learning, collaborating, and discussing creative technology ideas.</p>
-            <div class="contact-detail mt-4"><span class="contact-icon">✉</span><div><small class="text-secondary d-block">Email</small><a href="mailto:mishaalmubashar881@gmail.com">mishaalmubashar881@gmail.com</a></div></div>
-            <p class="small text-secondary mt-3">Replace the example email with your real contact email before publishing.</p>
-          </div>
-          <div class="col-lg-7">
-            <form id="contactForm" class="contact-form p-4 p-md-5 rounded-4 shadow-sm">
-              <div class="mb-3"><label for="name" class="form-label">Your name</label><input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required></div>
-              <div class="mb-3"><label for="email" class="form-label">Email address</label><input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required></div>
-              <div class="mb-3"><label for="message" class="form-label">Message</label><textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message..." required></textarea></div>
-              <button type="submit" class="btn btn-pink w-100">Prepare Email Message ↗</button>
-              <p class="form-text mb-0 mt-3">This static demo opens your email app; it does not store or send messages on a server.</p>
-              <div id="formNotice" class="alert alert-info mt-3 d-none" role="status">Your email app should open with the message prepared.</div>
-            </form>
-          </div>
+        <div class="section-top"><div><span class="eyebrow">TOOLS I WORK WITH</span><h2>My current<br><span class="gradient-text">toolkit.</span></h2></div><p class="section-intro">A broad foundation across programming, application development, databases, and the web — growing with every build.</p></div>
+        <div class="toolkit-grid">
+          <div class="tool-card"><div class="tool-icon icon-cpp">C++</div><div><h3>C++</h3><p>Programming fundamentals · problem solving</p></div><span class="tool-arrow">↗</span></div>
+          <div class="tool-card"><div class="tool-icon icon-csharp">C#</div><div><h3>C#</h3><p>OOP · application logic · ASP.NET MVC</p></div><span class="tool-arrow">↗</span></div>
+          <div class="tool-card"><div class="tool-icon icon-java">J</div><div><h3>Java</h3><p>Structured programs · conditions · logic</p></div><span class="tool-arrow">↗</span></div>
+          <div class="tool-card"><div class="tool-icon icon-python">Py</div><div><h3>Python</h3><p>Scripting · OpenCV · MediaPipe</p></div><span class="tool-arrow">↗</span></div>
+          <div class="tool-card"><div class="tool-icon icon-web">&lt;/&gt;</div><div><h3>HTML, CSS & JavaScript</h3><p>Responsive UI · interaction · animation</p></div><span class="tool-arrow">↗</span></div>
+          <div class="tool-card"><div class="tool-icon icon-db">DB</div><div><h3>MySQL & Databases</h3><p>Data modelling · queries · app integration</p></div><span class="tool-arrow">↗</span></div>
+          <div class="tool-card"><div class="tool-icon icon-php">PHP</div><div><h3>PHP & Bootstrap</h3><p>Server-rendered apps · responsive layouts</p></div><span class="tool-arrow">↗</span></div>
+          <div class="tool-card"><div class="tool-icon icon-git">⑂</div><div><h3>Git & GitHub</h3><p>Repositories · project documentation</p></div><span class="tool-arrow">↗</span></div>
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- Footer -->
-  <footer class="footer py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-      <p class="mb-0 small">© <span id="year"></span> Mishal Mubashar. Made with care.</p>
-      <div class="d-flex gap-3 small">
-        <a href="#home">Home</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
-        <a href="https://github.com/MishalMubashar" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <section id="journey" class="section-space journey-section">
+      <div class="container">
+        <div class="section-top"><div><span class="eyebrow">THE LONG GAME</span><h2>Learning today.<br><span class="gradient-text">Building tomorrow.</span></h2></div><p class="section-intro">My journey is about turning foundations into practical ability — one concept, one project, and one improvement at a time.</p></div>
+        <div class="journey-layout">
+          <div class="journey-card education-main"><span class="journey-icon">✳</span><span class="eyebrow">EDUCATION</span><h3>Bachelor’s in Software Engineering</h3><p>University of Lahore</p><div class="education-stats"><div><small>CGPA GOAL</small><strong>4.00 / 4.00</strong></div><div><small>MARKS GOAL</small><strong>92%</strong></div></div></div>
+          <div class="journey-card future-card"><span class="eyebrow">WHAT I'M WORKING TOWARD</span><div class="future-step"><span>01</span><div><h3>Stronger foundations</h3><p>Sharpen problem-solving, object-oriented design, and database fundamentals.</p></div></div><div class="future-step"><span>02</span><div><h3>Useful applications</h3><p>Connect clean interfaces with dependable backend logic and data.</p></div></div><div class="future-step"><span>03</span><div><h3>Experiments with impact</h3><p>Keep exploring AI, computer vision, and more engaging learning experiences.</p></div></div></div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
+</main>
 
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#home">M<span>/</span>M</a><p>Built with curiosity and a little bit of motion.</p><div><a href="https://github.com/MishalMubashar" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#home">Back to top ↑</a></div><small>© <span id="year"></span> Mishal Mubashar</small></div></footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Subtle 3D tilt on pointer devices; touch devices keep a stable layout.
-    if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-      document.querySelectorAll(".tilt-card").forEach((card) => {
-        card.addEventListener("mousemove", (event) => {
-          const rect = card.getBoundingClientRect();
-          const x = (event.clientX - rect.left) / rect.width;
-          const y = (event.clientY - rect.top) / rect.height;
-          card.style.transform = `perspective(1000px) rotateX(${(0.5 - y) * 7}deg) rotateY(${(x - 0.5) * 8}deg) translateY(-5px)`;
-        });
-        card.addEventListener("mouseleave", () => {
-          card.style.transform = "";
-        });
-      });
-    }
-
-    document.getElementById("contactForm").addEventListener("submit", function (event) {
-      event.preventDefault();
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const message = document.getElementById("message").value.trim();
-      const subject = encodeURIComponent("Portfolio contact from " + name);
-      const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message);
-      document.getElementById("formNotice").classList.remove("d-none");
-      window.location.href = "mailto:mishaalmubashar881@gmail.com?subject=" + subject + "&body=" + body;
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
